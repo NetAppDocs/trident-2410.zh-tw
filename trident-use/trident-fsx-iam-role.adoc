@@ -26,7 +26,7 @@ NOTE: 若要使用 AWS IAM 角色進行驗證、您必須使用 EKS 部署 Kuber
 [listing]
 ----
 aws secretsmanager create-secret --name trident-secret --description "Trident CSI credentials"\
-  --secret-string "{\"username\":\"vsadmin\",\"password\":\"<svmpassword>\"}""
+  --secret-string "{\"username\":\"vsadmin\",\"password\":\"<svmpassword>\"}"
 ----
 
 
@@ -132,7 +132,7 @@ aws iam attach-role-policy --role-name my-role --policy-arn <IAM policy ARN>
 ----
 aws iam list-open-id-connect-providers | grep $oidc_id | cut -d "/" -f4
 ----
-如果沒有輸出，您可以使用下列命令將 IAM OIDC 與叢集建立關聯：
+使用下列命令將 IAM OIDC 與叢集建立關聯：
 
 [listing]
 ----
