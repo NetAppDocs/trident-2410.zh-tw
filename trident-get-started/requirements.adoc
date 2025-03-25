@@ -71,7 +71,7 @@ WARNING: 在將安裝了 Trident 的 Kubernetes 叢集從 1.24 升級至 1.25 �
 * Azure NetApp Files
 * Cloud Volumes ONTAP
 * Google Cloud NetApp Volumes
-* FAS / AFF / 選擇 9.5 或更新版本
+* 內部部署 FAS ， AFF 或 ASA R2 叢集版本，受 NetApp 有限支援。請參閱。 link:https://mysupport.netapp.com/site/info/version-support["軟體版本支援"]
 * NetApp All SAN Array ASA （ESAN）
 * NetApp HCI / Element軟體11或更新版本
 
