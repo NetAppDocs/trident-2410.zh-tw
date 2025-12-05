@@ -42,11 +42,11 @@ indexpage:
       url: "/trident-use/vol-operations.html"
   - title: 進階資料管理與保護
     links:
-    - title: Trident Protect 提供進階資料保護功能
+    - title: 使用Trident Protect 實現進階資料保護
       url: "/trident-protect/learn-about-trident-protect.html"
-    - title: 部署 Trident Protect
+    - title: 部署Trident保護
       url: "/trident-protect/trident-protect-installation.html"
-    - title: 升級 Trident Protect
+    - title: 升級Trident保護
       url: "/trident-protect/trident-protect-upgrade.html"
   - title: 示範與教學課程
     links:
