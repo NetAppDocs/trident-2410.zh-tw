@@ -34,7 +34,7 @@ NOTE: 預設情況下， Trident Protect 會收集有助於處理您可能提交
 ----
 helm repo add netapp-trident-protect https://netapp.github.io/trident-protect-helm-chart
 ----
-. 安裝 Trident Protect 客戶需求日：
+. 安裝Trident Protect CRD：
 +
 [source, console]
 ----
@@ -48,7 +48,7 @@ helm install trident-protect-crds netapp-trident-protect/trident-protect-crds --
 ----
 helm install trident-protect netapp-trident-protect/trident-protect --set clusterName=<name_of_cluster> --version 100.2410.1 --create-namespace --namespace trident-protect
 ----
-** 安裝Trident Protect 並停用每日排程的Trident Protect AutoSupport支援套件上傳：
+** 安裝Trident Protect 並停用每日定期上傳的Trident Protect AutoSupport支援套件：
 +
 [source, console]
 ----

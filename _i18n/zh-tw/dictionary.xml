@@ -1644,7 +1644,6 @@
   <block id="2294988013d14e5c254422b8164d83ad" category="list-text">建立支援服務組合，以環境資訊取代括號中的值。<block ref="769627afa23a2b90f925b1091e474dc5" prefix=" " category="inline-code"></block>決定套件是立即建立，還是建立時間取決於排程，可以是<block ref="e1ba155a9f2e8c3be94020eef32a0301" prefix=" " category="inline-code"></block>或<block ref="2b7dabba0077abe3732e0418b048a56b" prefix=" " category="inline-code"></block>。預設設定為<block ref="e1ba155a9f2e8c3be94020eef32a0301" prefix=" " category="inline-code"></block>。</block>
   <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
   <block id="a268a576db3133de464aad1cd81ab3e1" category="inline-link-macro">產生支援服務組合</block>
-  <block id="76d9687f27080e6c2da9c8a0d64fbd42" category="list-text">安裝 Trident Protect 客戶需求日：</block>
   <block id="dfb8cfd789dde682f000a96e0aabb1f1" category="list-text">將下列影像拉到您的本機電腦，更新標記，然後將它們推送到您的私人登錄：</block>
   <block id="e0f6b701766eb28d805d7ba1e820f582" category="list-text">登入登錄：</block>
   <block id="814565bb5d7e7359fff967986fd4195a" category="list-text">建立用於私人登錄驗證的拉出密碼：</block>
@@ -3007,8 +3006,6 @@
   <block id="5866b98c049a53ea6dc7f50f9349f434" category="list-text">資料移轉</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="list-text">災難恢復</block>
   <block id="11d5920d0c0b3a97e764f84dc92ef110" category="list-text">應用程式行動力</block>
-  <block id="f593e32b2a3ead4ac029c13126d3531d" category="inline-link-macro">深入瞭解 Trident Protect</block>
-  <block id="a4ac350fb585f51020f747525f3175d8" category="paragraph"><block ref="2c7a14b5507108d57a83e6eb9858f03a" category="inline-link-macro-rx"></block>。</block>
   <block id="d28325b08a2b4a8f4af42dc025afe338" category="list-text">新增旗標<block ref="060e82a16c6de7d9a8541fb1da32de80" prefix=" " category="inline-code"></block>至安裝程式、以設定 Trident 用來與 Kubernetes API 伺服器通訊的 QPS 值。</block>
   <block id="46b4e7bf1e76e8eeb88747ded42b6d4f" category="list-text">新增<block ref="1606f6268af560ddbfffdd3790afb4d2" prefix=" " category="inline-code"></block>旗標至安裝程式、以自動管理 Kubernetes 叢集節點上的儲存傳輸協定相依性。已測試並驗證與 Amazon Linux 2023 iSCSI 儲存傳輸協定的相容性</block>
   <block id="ee2cc86dbfffd3b53ed4701a6b458dfb" category="list-text">在非正常節點關機案例中、新增對強制分離 ONTAP NAS 經濟型磁碟區的支援。</block>
@@ -5088,7 +5085,6 @@
   <block id="98d3ce5c789124fc9207b48d4d1e8fc7" category="paragraph">Trident Protect 24.10 在資料保護作業期間不會自動確保 KubeVirt VM 檔案系統的一致性狀態。如果您想使用Trident Protect 24.10 保護您的 KubeVirt VM 數據，則需要在執行資料保護作業之前手動啟用檔案系統的凍結/解凍功能。這樣可以確保檔案系統處於一致狀態。</block>
   <block id="5ea5c247812e1dca5ff02ca853f05032" category="paragraph">您可以設定Trident Protect 24.10 來管理資料保護作業期間 VM 檔案系統的凍結與解凍。<block ref="e0dd4c4b8aa16596df6c3f5cb36d3cdc" category="inline-link-macro-rx"></block>然後使用以下命令：</block>
   <block id="d9add54d9d6181f1b39ad4d1bc6451d0" category="paragraph-title">Trident Protect 24.10.1 及更高版本</block>
-  <block id="fc0a8846b51e68aef267b5f9ab2a081d" category="paragraph">從Trident Protect 24.10.1 開始， Trident Protect 會在資料保護作業期間自動凍結和解凍 KubeVirt 檔案系統。您也可以使用以下命令停用此自動行為：</block>
   <block id="d65eac563b898cb7e41b8853a4fe1a3c" category="paragraph">如果您使用 Helm 安裝了來源應用程序，<block ref="cc1f5c1d16e33b8463c9ee27295cd5df" prefix=" " category="inline-code"></block>國旗，給予特殊待遇<block ref="b068931cc450442b63f5b3d276ea4297" prefix=" " category="inline-code"></block>標籤鍵。在復原或故障轉移過程中， Trident Protect 會將此標籤複製到目標命名空間，但如果來源命名空間的值與來源命名空間的值匹配，則會將值更新為目標命名空間的值。如果此值與來源命名空間不匹配，則會將其複製到目標命名空間，而不做任何變更。</block>
   <block id="186ed0696d9f28961b696fce39a1ab04" category="summary">Trident Protect 讓您能夠使用Trident保護您的應用程式和應用程式資料。</block>
   <block id="a1fc1c89153021eb03a34941e90a9ac8" category="doc">了解Trident Protect</block>
@@ -5125,7 +5121,6 @@
   <block id="e0efc186d85cb700edf5d19dd5bc9496" category="open-title">從NetApp安裝Trident Protect</block>
   <block id="93459820f19a8251d29e060f09ece7bf" category="list-text">使用 Helm 透過以下指令之一安裝Trident Protect。代替<block ref="b90b2ffedb63ca3bd8795caf4397715e" prefix=" " category="inline-code"></block>集群名稱將分配給集群，並用於標識集群的備份和快照：</block>
   <block id="eb462dda0e96614f18b56ebeffd4f4c3" category="list-text">正常安裝Trident Protect：</block>
-  <block id="62d9a4720463384e2dba920f37795e8b" category="list-text">安裝Trident Protect 並停用每日排程的Trident Protect AutoSupport支援套件上傳：</block>
   <block id="272a3e0fc5f097dfcb8f549a6577a5f6" category="open-title">從私人註冊表安裝Trident Protect</block>
   <block id="357de3657314f9b2b3abd151f9d483ee" category="paragraph">如果您的 Kubernetes 叢集無法存取互聯網，您可以從私人鏡像倉庫安裝Trident Protect。在這些範例中，請將括號中的值替換為您環境中的資訊：</block>
   <block id="8bb72cea6536be6ef0764dfc1d24b096" category="list-text">建立Trident Protect 系統命名空間：</block>
@@ -5200,4 +5195,7 @@
   <block id="70568f333da28442c152ac2e1f71e1a0" category="sidebar">使用Trident Protect 保護應用程式</block>
   <block id="8545a0d7cdafff8da2dece1a851630dc" category="sidebar">管理Trident Protect</block>
   <block id="83ff2dd2ff6a9ee85daa1b0fefef4019" category="sidebar">使用Trident Protect 管理執行鉤子</block>
+  <block id="a099f4b5b32bb2a3c98bf39fd2eada0d" category="paragraph">從 Trident Protect 24.10.1 版本開始，Trident Protect 會在資料保護作業期間自動凍結和解凍 KubeVirt 檔案系統。您也可以選擇使用以下命令停用此自動行為：</block>
+  <block id="f2492ecd5d283ce85dae0f4a9ee08a0a" category="inline-link-macro">深入瞭解 Trident Protect</block>
+  <block id="fcea491f131646a6f887b5a13212cd84" category="paragraph"><block ref="30e9c40051e05c72dc744ea1f1015e1f" category="inline-link-macro-rx"></block>。</block>
 </blocks>
