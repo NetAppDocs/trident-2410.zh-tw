@@ -21,9 +21,9 @@ indexpage:
   - title: 部署 Trident
     links:
     - title: 與Trident營運者一起部署
-      url: "/trident-get-started/kubernetes-deploy-operator.html"
+      url: "/trident-install/kubernetes-deploy-operator.html"
     - title: 使用tridentctl部署
-      url: "/trident-get-started/kubernetes-deploy-tridentctl.html"
+      url: "/trident-install/kubernetes-deploy-tridentctl.html"
     - title: 部署 Trident for Docker
       url: "/trident-docker/deploy-docker.html"
   - title: 升級 Trident
@@ -57,7 +57,7 @@ indexpage:
   - title: 部落格與社群
     links:
     - title: Kubernetes Hub
-      url: https://cloud.netapp.com/kubernetes-hub
+      url: https://www.netapp.com/console/
     - title: NetApp.IO
       url: https://netapp.io/
     - title: 不和

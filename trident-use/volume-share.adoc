@@ -141,7 +141,7 @@ Trident 會讀取 `shareFromPVC`目的地 PVC 上的附註、並將目的地 PV 
 
 == 用於 `tridentctl get`查詢從屬磁碟區
 
-您可以使用[`tridentctl`公用程式執行 `get`命令來取得附屬磁碟區。如需更多資訊、請參閱連結： ../../lce-reference Trident / tridentctl.html[`tridentctl` 命令和選項 ] 。
+使用 [`tridentctl` 公用程式，您可以執行  `get` 命令來取得從屬磁碟區。如需詳細資訊，請參閱 link:../trident-managing-k8s/tridentctl.html[`tridentctl` 命令和選項]。
 
 [listing]
 ----
@@ -170,6 +170,5 @@ Usage:
 
 若要深入瞭解跨命名空間Volume存取：
 
-* 請造訪。link:https://cloud.netapp.com/blog/astra-blg-sharing-volumes-between-namespaces-say-hello-to-cross-namespace-volume-access["在命名空間之間共用磁碟區：歡迎使用跨命名空間磁碟區存取"^]
 * 觀看上的示範 link:https://media.netapp.com/page/9071d19d-1438-5ed3-a7aa-ea4d73c28b7f/solutions-products["NetAppTV"^]。
 

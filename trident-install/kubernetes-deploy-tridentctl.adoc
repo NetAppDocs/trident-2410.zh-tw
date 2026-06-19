@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: trident-get-started/kubernetes-deploy-tridentctl.html 
+permalink: trident-install/kubernetes-deploy-tridentctl.html 
 keywords: deploy, Trident, methods, tridentctl, windows 
 summary: '您可以使用安裝 Trident `tridentctl` 。此程序適用於 Trident 所需的容器映像儲存在私有登錄中或不儲存在私有登錄中的安裝。' 
 ---
@@ -35,10 +35,10 @@ summary: '您可以使用安裝 Trident `tridentctl` 。此程序適用於 Tride
 
 == 使用安裝 Trident `tridentctl`
 
-請檢閱link:../trident-get-started/kubernetes-deploy.html["安裝總覽"]以確保您符合安裝先決條件、並為您的環境選擇正確的安裝選項。
+檢查 link:../trident-install/kubernetes-deploy.html["安裝總覽"] 以確保滿足安裝先決條件並為您的環境選擇了正確的安裝選項。
 
 .開始之前
-在開始安裝之前、請先登入 Linux 主機、並確認其正在管理工作中的主機、link:requirements.html["支援的Kubernetes叢集"^]以及您是否擁有必要的 Privileges 。
+在開始安裝之前，請登入 Linux 主機並驗證它是否正在管理運作中的 link:trident-get-started/requirements.html["支援的Kubernetes叢集"]，以及您是否擁有必要的權限。
 
 
 NOTE: 使用 OpenShift 時、請使用 `oc`而非 `kubectl`後續所有範例、並先執行或 `oc login -u kube-admin`以 * 系統： admin* 的身分登入 `oc login -u system:admin`。
@@ -188,7 +188,7 @@ tridentctl install --windows -n trident
 .強制分離
 [%collapsible]
 ====
-如需強制分離的詳細資訊、請link:..trident-get-started/kubernetes-customize-deploy.html["自訂Trident操作員安裝"]參閱。
+如需強制分離的詳細資訊，請參閱link:..trident-install/kubernetes-customize-deploy.html["自訂Trident操作員安裝"]。
 
 [listing]
 ----
