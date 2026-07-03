@@ -264,7 +264,7 @@ vserver nfs modify -vserver <svm_name> -showmount disabled
 
 NOTE: 雖然最大IOPS和爆發IOPS可設定為高達20、000、但實際的Volume最大效能卻受到叢集使用量和每節點效能的限制。
 
-區塊大小和頻寬會直接影響IOPS的數量。隨著區塊大小增加、系統會將頻寬增加至處理較大區塊大小所需的層級。隨著頻寬增加、系統能夠達到的IOPS數量也隨之減少。如需 QoS 和效能的詳細資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/10502-tr-4644pdf.pdf["服務品質SolidFire"^]。
+區塊大小和頻寬對 IOPS 數量有直接影響。隨著區塊大小增加，系統會將頻寬提高到處理較大區塊大小所需的層級。隨著頻寬增加，系統能夠達到的 IOPS 數量會減少。如需 QoS 和效能的詳細資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/10502-tr-4644.pdf["服務品質SolidFire"^]。
 
 
 
@@ -294,7 +294,7 @@ CHAP驗證（驗證啟動器是否為預定的Volume使用者）僅支援帳戶�
 
 *元件軟體*
 
-* https://www.netapp.com/pdf.html?item=/media/10507-tr4639pdf.pdf["設定SolidFire 適用於Linux的功能"^]
+* https://www.netapp.com/pdf.html?item=/media/10507-tr4639.pdf["設定SolidFire 適用於Linux的功能"^]
 
 
 * NetApp HCI *
@@ -307,9 +307,9 @@ CHAP驗證（驗證啟動器是否為預定的Volume使用者）僅支援帳戶�
 
 * https://docs.netapp.com/us-en/ontap-apps-dbs/mysql/mysql-overview.html["MySQL ONTAP 的最佳實務做法"^]
 * https://www.netapp.com/pdf.html?item=/media/10510-tr-4605.pdf["MySQL SolidFire 的最佳實務做法"^]
-* https://www.netapp.com/pdf.html?item=/media/10513-tr-4635pdf.pdf["NetApp SolidFire 的功能與Cassandra"^]
-* https://www.netapp.com/pdf.html?item=/media/10511-tr4606pdf.pdf["Oracle SolidFire 的最佳實務做法"^]
-* https://www.netapp.com/pdf.html?item=/media/10512-tr-4610pdf.pdf["PostgreSQL SolidFire 的最佳實務做法"^]
+* https://www.netapp.com/pdf.html?item=/media/10513-tr-4635.pdf["NetApp SolidFire 的功能與Cassandra"^]
+* https://www.netapp.com/pdf.html?item=/media/10511-tr4606.pdf["Oracle SolidFire 的最佳實務做法"^]
+* https://www.netapp.com/pdf.html?item=/media/10512-tr-4610.pdf["PostgreSQL SolidFire 的最佳實務做法"^]
 
 
 並非所有應用程式都有特定準則、請務必與 NetApp 團隊合作、並使用 https://www.netapp.com/search/["NetApp資料庫"^]來尋找最新的文件。
