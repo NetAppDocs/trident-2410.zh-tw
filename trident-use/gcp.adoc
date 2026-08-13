@@ -16,6 +16,7 @@ summary: 瞭解如何使用提供的範例組態、將 Cloud Volumes Service for
 
 
 
+[[google-cloud-driver-details]]
 == Google Cloud 驅動程式詳細資料
 
 Trident 提供 `gcp-cvs`與叢集通訊的驅動程式。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。
@@ -37,6 +38,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 |===
 
 
+[[learn-about-trident-support-for-cloud-volumes-service-for-google-cloud]]
 == 瞭解 Trident 支援 Cloud Volumes Service for Google Cloud
 
 Trident 可以透過以下兩種方式之一建立 Cloud Volumes Service 磁碟區link:https://docs.cloud.google.com/netapp/volumes/docs/discover/overview["服務類型"^]：
@@ -67,6 +69,7 @@ Trident 可以透過以下兩種方式之一建立 Cloud Volumes Service 磁碟�
 
 
 
+[[backend-configuration-options]]
 == 後端組態選項
 
 每個後端都會在單一Google Cloud區域中配置磁碟區。若要在其他區域建立磁碟區、您可以定義其他後端。
@@ -129,6 +132,7 @@ Trident 可以透過以下兩種方式之一建立 Cloud Volumes Service 磁碟�
 |===
 
 
+[[volume-provisioning-options]]
 == Volume資源配置選項
 
 您可以在組態檔案的區段中控制預設的 Volume 資源配置 `defaults`。
@@ -151,6 +155,7 @@ Trident 可以透過以下兩種方式之一建立 Cloud Volumes Service 磁碟�
 |===
 
 
+[[cvs-performance-service-type-examples]]
 == CVS效能服務類型範例
 
 下列範例提供CVS效能服務類型的範例組態。
@@ -289,6 +294,7 @@ storage:
 ====
 
 
+[[storage-class-definitions]]
 === 儲存類別定義
 
 下列StorageClass定義適用於虛擬集區組態範例。使用 `parameters.selector`時、您可以為每個 StorageClass 指定用於主控磁碟區的虛擬集區。該磁碟區會在所選的資源池中定義各個層面。
@@ -359,6 +365,7 @@ allowVolumeExpansion: true
 
 
 
+[[cvs-service-type-examples]]
 == CVS服務類型範例
 
 下列範例提供CVS服務類型的範例組態。
@@ -431,6 +438,7 @@ serviceLevel: Standardsw
 ====
 
 
+[[whats-next]]
 == 接下來呢？
 
 建立後端組態檔之後、請執行下列命令：

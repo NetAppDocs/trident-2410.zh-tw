@@ -16,6 +16,7 @@ summary: 瞭解 Google Cloud NetApp Volume 的 NFS 和 NFS 後端組態選項、
 
 
 
+[[backend-configuration-options]]
 == 後端組態選項
 
 每個後端都會在單一Google Cloud區域中配置磁碟區。若要在其他區域建立磁碟區、您可以定義其他後端。
@@ -68,6 +69,7 @@ summary: 瞭解 Google Cloud NetApp Volume 的 NFS 和 NFS 後端組態選項、
 |===
 
 
+[[volume-provisioning-options]]
 == Volume資源配置選項
 
 您可以在組態檔案的區段中控制預設的 Volume 資源配置 `defaults`。
@@ -90,6 +92,7 @@ summary: 瞭解 Google Cloud NetApp Volume 的 NFS 和 NFS 後端組態選項、
 |===
 
 
+[[example-configurations]]
 == 組態範例
 
 下列範例顯示基本組態、讓大部分參數保留預設值。這是定義後端最簡單的方法。
@@ -373,6 +376,7 @@ supportedTopologies:
 ====
 
 
+[[whats-next]]
 == 接下來呢？
 
 建立後端組態檔之後、請執行下列命令：
@@ -400,10 +404,12 @@ tridentctl logs
 
 
 
+[[more-examples]]
 == 更多範例
 
 
 
+[[storage-class-definition-examples]]
 === 儲存類別定義範例
 
 以下是上述後端的基本 `StorageClass` 定義。
@@ -457,6 +463,7 @@ parameters:
 
 
 
+[[pvc-definition-example]]
 === PVC 定義範例
 
 [listing]

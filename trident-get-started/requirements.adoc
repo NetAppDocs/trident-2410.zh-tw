@@ -16,6 +16,7 @@ summary: 安裝 Trident 之前、您應該先檢閱這些一般系統需求。�
 
 
 
+[[critical-information-about-trident]]
 == Trident 的重要資訊
 
 * 您必須閱讀下列有關 Trident 的重要資訊。 *
@@ -36,6 +37,7 @@ summary: 安裝 Trident 之前、您應該先檢閱這些一般系統需求。�
 ====
 
 
+[[supported-frontends-orchestrators]]
 == 支援的前端（協調器）
 
 Trident 支援多個容器引擎和協調器、包括：
@@ -63,6 +65,7 @@ WARNING: 在將安裝了 Trident 的 Kubernetes 叢集從 1.24 升級至 1.25 �
 
 
 
+[[supported-backends-storage]]
 == 支援的後端（儲存）
 
 若要使用 Trident 、您需要下列一或多個支援的後端：
@@ -78,6 +81,7 @@ WARNING: 在將安裝了 Trident 的 Kubernetes 叢集從 1.24 升級至 1.25 �
 
 
 
+[[feature-requirements]]
 == 功能需求
 
 下表摘要說明此 Trident 版本的可用功能、以及其支援的 Kubernetes 版本。
@@ -144,6 +148,7 @@ WARNING: 在將安裝了 Trident 的 Kubernetes 叢集從 1.24 升級至 1.25 �
 |===
 
 
+[[tested-host-operating-systems]]
 == 已測試的主機作業系統
 
 雖然 Trident 並未正式支援特定作業系統、但已知下列項目可以正常運作：
@@ -164,6 +169,7 @@ NOTE: NVMe / TCP 需要 RHEL 9 或更新版本。
 
 
 
+[[host-configuration]]
 == 主機組態
 
 Kubernetes叢集中的所有工作節點都必須能夠掛載您已為Pod配置的磁碟區。若要準備工作節點、您必須根據您選擇的驅動程式來安裝 NFS 、 iSCSI 或 NVMe 工具。
@@ -172,6 +178,7 @@ link:../trident-use/worker-node-prep.html["準備工作節點"]
 
 
 
+[[storage-system-configuration]]
 == 儲存系統組態
 
 Trident 可能需要變更儲存系統、後端組態才能使用。
@@ -180,6 +187,7 @@ link:../trident-use/backends.html["設定後端"]
 
 
 
+[[trident-ports]]
 == Trident 連接埠
 
 Trident 需要存取特定連接埠才能進行通訊。
@@ -188,6 +196,7 @@ link:../trident-reference/ports.html["Trident 連接埠"]
 
 
 
+[[container-images-and-corresponding-kubernetes-versions]]
 == Container映像和對應的Kubernetes版本
 
 對於無線安裝、下列清單是安裝 Trident 所需的容器映像參考資料。使用 `tridentctl images`命令來驗證所需的容器映像清單。

@@ -16,6 +16,7 @@ summary: 深入瞭解 Trident 所通訊的連接埠。
 
 
 
+[[trident-ports]]
 == Trident 連接埠
 
 Trident 透過下列連接埠進行通訊：

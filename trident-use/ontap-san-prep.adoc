@@ -16,6 +16,7 @@ summary: 瞭解如何準備使用ONTAP 不含NetApp功能的SAN驅動程式來�
 
 
 
+[[requirements]]
 == 需求
 
 對於所有 ONTAP 後端、 Trident 至少需要指派一個 Aggregate 給 SVM 。
@@ -26,6 +27,7 @@ summary: 瞭解如何準備使用ONTAP 不含NetApp功能的SAN驅動程式來�
 
 
 
+[[authenticate-the-ontap-backend]]
 == 驗證 ONTAP 後端
 
 Trident 提供兩種驗證 ONTAP 後端的模式。
@@ -41,6 +43,7 @@ WARNING: 如果您嘗試同時提供*認證與認證*、後端建立將會失敗
 
 
 
+[[enable-credential-based-authentication]]
 === 啟用認證型驗證
 
 Trident 需要 SVM 範圍 / 叢集範圍管理員的認證、才能與 ONTAP 後端通訊。建議您使用標準的預先定義角色、例如 `admin`或 `vsadmin`。如此可確保與未來 ONTAP 版本的前移相容性、這些版本可能會公開未來 Trident 版本所使用的功能 API 。自訂安全登入角色可建立並搭配 Trident 使用、但不建議使用。
@@ -84,6 +87,7 @@ password: password
 
 
 
+[[enable-certificate-based-authentication]]
 === 啟用憑證型驗證
 
 新的和現有的後端可以使用憑證、並與ONTAP 該後端通訊。後端定義需要三個參數。
@@ -169,6 +173,7 @@ tridentctl create backend -f cert-backend.json -n trident
 
 
 
+[[update-authentication-methods-or-rotate-credentials]]
 === 更新驗證方法或旋轉認證資料
 
 您可以更新現有的後端、以使用不同的驗證方法或旋轉其認證資料。這兩種方法都可行：使用使用者名稱/密碼的後端可更新以使用憑證；使用憑證的後端可更新為使用者名稱/密碼。若要這麼做、您必須移除現有的驗證方法、然後新增驗證方法。然後使用包含執行所需參數的更新後端 .json 檔案 `tridentctl backend update`。
@@ -202,6 +207,7 @@ NOTE: 當您旋轉密碼時、儲存管理員必須先更新ONTAP 使用者的�
 
 
 
+[[create-custom-ontap-role-for-trident]]
 === 為 Trident 建立自訂 ONTAP 角色
 
 您可以使用最低 Privileges 來建立 ONTAP 叢集角色、這樣就不需要使用 ONTAP 管理員角色來執行 Trident 中的作業。當您在 Trident 後端組態中包含使用者名稱時、 Trident 會使用您建立的 ONTAP 叢集角色來執行作業。
@@ -261,6 +267,7 @@ NOTE: 當您旋轉密碼時、儲存管理員必須先更新ONTAP 使用者的�
 
 
 
+[[authenticate-connections-with-bidirectional-chap]]
 == 使用雙向CHAP驗證連線
 
 Trident 可以使用和 `ontap-san-economy`驅動程式的雙向 CHAP 驗證 iSCSI 工作階段 `ontap-san`。這需要在後端定義中啟用 `useCHAP`選項。設為 `true`時、 Trident 會將 SVM 的預設啟動器安全性設定為雙向 CHAP 、並從後端檔案設定使用者名稱和密碼。NetApp建議使用雙向CHAP來驗證連線。請參閱下列組態範例：
@@ -288,6 +295,7 @@ WARNING:  `useCHAP`參數是布林選項、只能設定一次。預設值設為�
 
 
 
+[[how-it-works]]
 === 運作方式
 
 儲存管理員會將設定 `useCHAP`為 true 、指示 Trident 在儲存後端上設定 CHAP 。這包括下列項目：
@@ -305,6 +313,7 @@ WARNING:  `useCHAP`參數是布林選項、只能設定一次。預設值設為�
 
 
 
+[[rotate-credentials-and-update-backends]]
 === 旋轉認證資料並更新後端
 
 您可以更新檔案中的 CHAP 參數來更新 CHAP 認證 `backend.json`。這需要更新 CHAP 機密、並使用 `tridentctl update`命令來反映這些變更。

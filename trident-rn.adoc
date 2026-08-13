@@ -19,10 +19,12 @@ WARNING:  `tridentctl`安裝程式 zip 檔案中提供的 Linux 二進位檔案�
 
 
 
+[[whats-new-in-24-10]]
 == 24.10 的新功能
 
 
 
+[[enhancements]]
 === 增強功能
 
 * Google Cloud NetApp Volumes 驅動程式現在通常可用於 NFS 磁碟區、並支援區域感知資源配置。
@@ -68,6 +70,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[fixes]]
 === 修正
 
 * * Kubernetes* ：
@@ -84,6 +87,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[deprecations]]
 === 棄用
 
 * * Kubernetes ： *
@@ -96,16 +100,19 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[product-rebranding]]
 === 產品重新品牌化
 
 從 24.10 版本開始、 Astra Trident 將改為 Trident （ NetApp Trident ）品牌。這項品牌重塑不會影響 Trident 的任何功能，支援的平台或互通性。
 
 
 
+[[changes-in-24-06]]
 == 24.06 的變更
 
 
 
+[[enhancements]]
 === 增強功能
 
 * ** 重要 ** ：此 `limitVolumeSize` 參數現在限制了 ONTAP 經濟驅動程式中的 qtree /LUN 大小。使用新  `limitVolumePoolSize` 參數來控制這些驅動程式中的 FlexVol 大小。（link:https://github.com/NetApp/trident/issues/341["問題 #341"]）。
@@ -132,6 +139,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[fixes]]
 === 修正
 
 * 修正因過時交易而導致的 Trident 安裝失敗。
@@ -144,10 +152,12 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[changes-in-24-02]]
 == 24.02 的變更
 
 
 
+[[enhancements]]
 === 增強功能
 
 * 新增對 Cloud Identity 的支援。
@@ -170,6 +180,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[fixes]]
 === 修正
 
 * 當未啟用 ACP 時，會出現固定的 ACP 警告訊息（link:https://github.com/NetApp/trident/issues/866["問題 #866"]）。
@@ -178,6 +189,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[deprecations]]
 === 棄用
 
 * 已從多平台映像清單移除 TOATteStation 內部架構。
@@ -185,10 +197,12 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[changes-in-23-10]]
 == 23.10 的變更
 
 
 
+[[fixes]]
 === 修正
 
 * 如果新要求的大小小於 ONTAP NAS 和 ONTAP NAS FlexGroup 儲存驅動程式的總磁碟區大小（）、則為固定磁碟區擴充（link:https://github.com/NetApp/trident/issues/834["問題 #834"^]）。
@@ -199,6 +213,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[enhancements]]
 === 增強功能
 
 
@@ -218,16 +233,19 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[changes-in-23-07-1]]
 == 23.07.1 的變更
 
 *Kubernetes:* 修正刪除程式集、以支援零停機升級（link:https://github.com/NetApp/trident/issues/740["問題 #740"^]）。
 
 
 
+[[changes-in-23-07]]
 == 2007 年 23 月 23 日的變更
 
 
 
+[[fixes]]
 === 修正
 
 
@@ -251,6 +269,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[enhancements]]
 === 增強功能
 
 
@@ -286,6 +305,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[deprecations]]
 === 棄用
 
 
@@ -299,6 +319,7 @@ link:./trident-protect/learn-about-trident-protect.html["深入瞭解 Trident Pr
 
 
 
+[[changes-in-23-04]]
 == 23.04 的變更
 
 
@@ -306,6 +327,7 @@ IMPORTANT: 僅當 Kubernetes 版本啟用非正常節點關機功能閘道時、
 
 
 
+[[fixes]]
 === 修正
 
 * 固定Trident運算子在SPEC中指定安裝時使用IPv6 localhost。
@@ -322,6 +344,7 @@ IMPORTANT: 僅當 Kubernetes 版本啟用非正常節點關機功能閘道時、
 
 
 
+[[enhancements]]
 === 增強功能
 
 * Kubernetes：
@@ -343,16 +366,19 @@ IMPORTANT: 僅當 Kubernetes 版本啟用非正常節點關機功能閘道時、
 
 
 
+[[deprecations]]
 === 棄用
 
 **Kubernetes ： ** 設定 ONTAP SAN 和 ONTAP SAN 經濟型驅動程式時、將不再建立後端範圍的 igroup （群組群）（link:https://github.com/NetApp/trident/issues/758["問題 #758"]）。
 
 
 
+[[changes-in-23-01-1]]
 == 23.01.1 的變更
 
 
 
+[[fixes]]
 === 修正
 
 * 固定Trident運算子在SPEC中指定安裝時使用IPv6 localhost。
@@ -364,6 +390,7 @@ IMPORTANT: 僅當 Kubernetes 版本啟用非正常節點關機功能閘道時、
 
 
 
+[[changes-in-23-01]]
 == 23.01 的變更
 
 
@@ -371,6 +398,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[fixes]]
 === 修正
 
 * Kubernetes ：新增選項以排除建立 Pod 安全性原則、以透過 Helm 修復 Trident 安裝（link:https://github.com/NetApp/trident/issues/794["問題#783、#794"^]）。
@@ -378,6 +406,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[enhancements]]
 === 增強功能
 
 .Kubernetes
@@ -400,6 +429,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[deprecations]]
 === 棄用
 
 * Kubernetes：將支援的Kubernetes最低更新為1.21。
@@ -408,6 +438,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[changes-in-22-10]]
 == 22.10 的變更
 
 * 升級至 Trident 22.10.* 之前、您必須先閱讀下列重要資訊
@@ -425,6 +456,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 ====
 
 
+[[fixes]]
 === 修正
 
 * 修復了在 22.07.0 升級期間使用欄位無法上線所建立的 ONTAP 後端所特有的問題 `credentials`（link:https://github.com/NetApp/trident/issues/759["問題 #759"^]）。
@@ -437,6 +469,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[enhancements]]
 === 增強功能
 
 * Kubernetes：
@@ -456,6 +489,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[deprecations]]
 === 棄用
 
 * ** Kubernetes ： ** 將支援的最小 Kubernetes 更新為 1.20 。
@@ -465,10 +499,12 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[changes-in-22-07]]
 == 22.07 的變更
 
 
 
+[[fixes]]
 === 修正
 
 ** Kubernetes*
@@ -479,6 +515,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[enhancements]]
 === 增強功能
 
 * 將k8s.gcr.IO轉換為登錄.k8s.IO、做為SCSI映像的預設登錄
@@ -490,6 +527,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[deprecations]]
 === 棄用
 
 * ** Kubernetes ： ** 將支援的最小 Kubernetes 更新為 1.19 。
@@ -498,6 +536,7 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[removals]]
 === 移除
 
 * AWS CVS驅動程式（自22.04年起已過時）已移除。
@@ -511,12 +550,14 @@ IMPORTANT: Kubernetes 1.27 現在支援 Trident 。請先升級Trident、再升�
 
 
 
+[[documentation]]
 === 文件
 
 新增了一個新的link:https://docs.netapp.com/us-en/trident/trident-reference/pod-security.html["Pod安全標準"]（ PSS ）區段、詳述 Trident 在安裝時啟用的權限。
 
 
 
+[[changes-in-22-04]]
 == 22.04 的變更
 
 NetApp 不斷改進和增強其產品和服務。以下是 Trident 的一些最新功能。有關先前版本的信息，請參閱早期版本的文檔。
@@ -526,6 +567,7 @@ IMPORTANT: 如果您要從任何先前的 Trident 版本升級並使用 Azure Ne
 
 
 
+[[fixes]]
 === 修正
 
 * 改善iSCSI啟動器名稱的剖析。()link:https://github.com/NetApp/trident/issues/681["GitHub 問題 #681"^]
@@ -540,6 +582,7 @@ IMPORTANT: 如果您要從任何先前的 Trident 版本升級並使用 Azure Ne
 
 
 
+[[enhancements]]
 === 增強功能
 
 * 若要連入Trident的安全端點、現在至少需要TLS 1.3。()link:https://github.com/NetApp/trident/issues/698["GitHub 問題 #698"^]
@@ -550,16 +593,19 @@ IMPORTANT: 如果您要從任何先前的 Trident 版本升級並使用 Azure Ne
 
 
 
+[[removals]]
 === 移除
 
 E系列驅動程式（自20.07起停用）已移除。
 
 
 
+[[changes-in-22-01-1]]
 == 22.01.1 的變更
 
 
 
+[[fixes]]
 === 修正
 
 * 已修正在刪除節點上解除發佈磁碟區的問題。()link:https://github.com/NetApp/trident/issues/691["GitHub 問題 #691"]
@@ -568,10 +614,12 @@ E系列驅動程式（自20.07起停用）已移除。
 
 
 
+[[changes-in-22-01-0]]
 == 22.01.0 的變更
 
 
 
+[[fixes]]
 === 修正
 
 * * Kubernetes：*增加大型叢集的節點登錄回退重試時間。
@@ -586,6 +634,7 @@ E系列驅動程式（自20.07起停用）已移除。
 
 
 
+[[enhancements]]
 === 增強功能
 
 * Kubernetes增強功能：
@@ -600,12 +649,14 @@ E系列驅動程式（自20.07起停用）已移除。
 
 
 
+[[deprecations]]
 === 棄用
 
 Trident REST介面只能以127.0.0.1或[:1]位址接聽和使用
 
 
 
+[[changes-in-21-10-1]]
 == 21.10.1 的變更
 
 
@@ -613,6 +664,7 @@ WARNING: v21.10.0版本發生問題、可在移除節點後將Trident控制器�
 
 
 
+[[fixes]]
 === 修正
 
 * 修正在GCP CVS後端匯入磁碟區時可能發生的競爭狀況、導致無法匯入。
@@ -622,10 +674,12 @@ WARNING: v21.10.0版本發生問題、可在移除節點後將Trident控制器�
 
 
 
+[[changes-in-21-10-0]]
 == 21.10.0 的變更
 
 
 
+[[fixes]]
 === 修正
 
 * 修正XFS磁碟區的複本無法與來源磁碟區掛載在同一個節點上的問題（GitHub問題514）。
@@ -646,6 +700,7 @@ WARNING: v21.10.0版本發生問題、可在移除節點後將Trident控制器�
 
 
 
+[[enhancements]]
 === 增強功能
 
 * 新增對 GCP-CVS 效能磁碟區選項的支援 `unixPermissions`。
@@ -661,6 +716,7 @@ WARNING: v21.10.0版本發生問題、可在移除節點後將Trident控制器�
 
 
 
+[[experimental-enhancements]]
 === 實驗性增強功能
 
 * 新增對磁碟區複寫的支援 `ontap-san`。
@@ -669,6 +725,7 @@ WARNING: v21.10.0版本發生問題、可在移除節點後將Trident控制器�
 
 
 
+[[known-issues]]
 == 已知問題
 
 已知問題可識別可能導致您無法成功使用產品的問題。
@@ -692,6 +749,7 @@ NOTE: 您無法在 ONTAP SAN 後端上指定 `dataLIF`。Trident 會探索所有
 
 
 
+[[find-more-information]]
 == 如需詳細資訊、請參閱
 
 * https://github.com/NetApp/trident["Trident GitHub"^]

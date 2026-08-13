@@ -12,10 +12,11 @@ summary: 您可以使用操作員輕鬆升級現有的 Trident 安裝。
 
 
 [role="lead"]
-您可以手動或使用 Helm 、使用 Trident 營運商來升級 Trident 。您可以從 Trident 營運商安裝升級至其他 Trident 營運商安裝、或從安裝升級 `tridentctl`至 Trident 營運商版本。在升級 Trident 操作員安裝之前、請先檢閱link:upgrade-trident.html#select-an-upgrade-method["選擇升級方法"]。
+您可以使用 Trident Operator 手動或透過 Helm 升級 Trident。您可以從一個 Trident Operator 安裝升級到另一個 Trident Operator 安裝，也可以從 `tridentctl`安裝升級到 Trident Operator 版本。在升級 Trident Operator 安裝之前，請先檢閱link:upgrade-trident.html#step-3-select-an-upgrade-method["選擇升級方法"]。
 
 
 
+[[upgrade-a-manual-installation]]
 == 升級手動安裝
 
 您可以從叢集範圍的 Trident 運算子安裝升級到另一個叢集範圍的 Trident 運算子安裝。所有 Trident 版本 21.01 及更新版本均使用叢集範圍的運算子。
@@ -57,6 +58,7 @@ kubectl create -f 24.10.0/trident-installer/deploy/<bundle.yaml> -n trident
 
 
 
+[[upgrade-a-helm-installation]]
 == 升級 Helm 安裝
 
 您可以升級 Trident Helm 安裝。
@@ -102,6 +104,7 @@ NOTE: 如果您在初始安裝期間設定自訂選項（例如指定 Trident �
 
 
 
+[[upgrade-from-a-tridentctl-installation-to-trident-operator]]
 == 從安裝升級 `tridentctl`至 Trident 營運商
 
 您可以從安裝升級至最新版本的 Trident 操作員 `tridentctl`。現有的後端和 PVC 將會自動提供使用。

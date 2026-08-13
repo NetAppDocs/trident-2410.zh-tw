@@ -21,6 +21,7 @@ NOTE: 當您還原應用程式時，為應用程式設定的所有執行掛鉤�
 
 
 
+[[namespace-annotations-and-labels-during-restore-and-failover-operations]]
 == 還原和容錯移轉作業期間的命名空間註釋和標籤
 
 在還原和容錯移轉作業期間，目的地命名空間中的標籤和註釋會與來源命名空間中的標籤和註釋相符。會新增來源命名空間中不存在的標籤或註釋，並覆寫已存在的任何標籤或註釋，以符合來源命名空間的值。只存在於目的地命名空間上的標籤或註釋會保持不變。
@@ -38,6 +39,7 @@ kubectl set env -n trident-protect deploy/trident-protect-controller-manager RES
 
 
 
+[[example]]
 === 範例
 
 以下範例提供來源和目的地命名空間，每個命名空間都有不同的註釋和標籤。您可以查看作業前後目的地命名空間的狀態，以及註釋和標籤在目的地命名空間中的組合或覆寫方式。
@@ -100,6 +102,7 @@ kubectl set env -n trident-protect deploy/trident-protect-controller-manager RES
 |===
 
 
+[[restore-from-a-backup-to-a-different-namespace]]
 == 從備份還原至不同的命名空間
 
 當您使用 BackupRestore CR 將備份還原到不同的命名空間時， Trident Protect 會在新的命名空間中還原應用程序，並為還原的應用程式建立一個應用程式 CR。為了保護已還原的應用程序，可以建立按需備份或快照，或製定保護計劃。
@@ -209,6 +212,7 @@ tridentctl-protect create backuprestore <my_restore_name> --backup <backup_names
 ====
 
 
+[[restore-from-a-backup-to-the-original-namespace]]
 == 從備份還原至原始命名空間
 
 您可以隨時將備份還原至原始命名空間。
@@ -312,6 +316,7 @@ tridentctl-protect create backupinplacerestore <my_restore_name> --backup <names
 ====
 
 
+[[restore-from-a-backup-to-a-different-cluster]]
 == 從備份還原至不同的叢集
 
 如果原始叢集發生問題，您可以將備份還原至不同的叢集。
@@ -416,6 +421,7 @@ tridentctl-protect create backuprestore <restore_name> --namespace-mapping <sour
 ====
 
 
+[[restore-from-a-snapshot-to-a-different-namespace]]
 == 從快照還原至不同的命名空間
 
 您可以使用自訂資源 (CR) 檔案從快照還原數據，還原到不同的命名空間或原始來源命名空間。當您使用 SnapshotRestore CR 將快照還原到不同的命名空間時， Trident Protect 會在新的命名空間中還原應用程序，並為還原的應用程式建立應用程式 CR。為了保護已還原的應用程序，可以建立按需備份或快照，或製定保護計劃。
@@ -530,6 +536,7 @@ tridentctl-protect create snapshotrestore <my_restore_name> --snapshot <namespac
 ====
 
 
+[[restore-from-a-snapshot-to-the-original-namespace]]
 == 從快照還原至原始命名空間
 
 您可以隨時將快照還原至原始命名空間。
@@ -633,6 +640,7 @@ tridentctl-protect create snapshotinplacerestore <my_restore_name> --snapshot <s
 ====
 
 
+[[check-the-status-of-a-restore-operation]]
 == 檢查還原作業的狀態
 
 您可以使用命令列來檢查進行中，已完成或已失敗的還原作業狀態。

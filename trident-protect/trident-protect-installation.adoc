@@ -21,6 +21,7 @@ NOTE: 預設情況下， Trident Protect 會收集有助於處理您可能提交
 
 
 
+[[install-trident-protect]]
 == 安裝Trident Protect
 
 [role="tabbed-block"]
@@ -171,6 +172,7 @@ helm install trident-protect netapp-trident-protect/trident-protect --set autoSu
 ====
 
 
+[[specify-trident-protect-container-resource-limits]]
 == 指定Trident Protect 容器資源限制
 
 安裝Trident Protect 後，您可以使用設定檔來指定Trident Protect 容器的資源限制。設定資源限制可以控制Trident Protect 作業消耗叢集資源的程度。

@@ -16,6 +16,7 @@ summary:
 
 
 
+[[google-cloud-netapp-volumes-driver-details]]
 == Google Cloud NetApp Volumes 驅動程式詳細資料
 
 Trident 提供 `google-cloud-netapp-volumes`與叢集通訊的驅動程式。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。
@@ -37,6 +38,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 |===
 
 
+[[cloud-identity-for-gke]]
 == GKE 的雲端身分識別
 
 雲端身分識別可讓 Kubernetes Pod 以工作負載身分驗證來存取 Google Cloud 資源、而非提供明確的 Google Cloud 身分證明。

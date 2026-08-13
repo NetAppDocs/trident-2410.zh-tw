@@ -16,6 +16,7 @@ Trident 可讓 Kubernetes 使用者在建立磁碟區之後擴充其容量。尋
 
 
 
+[[expand-an-iscsi-volume]]
 == 展開iSCSI Volume
 
 您可以使用「SCSI資源配置程式」來擴充iSCSI持續磁碟區（PV）。
@@ -25,6 +26,7 @@ NOTE: iSCSI Volume 擴充受、、 `solidfire-san`驅動程式支援 `ontap-san`
 
 
 
+[[step-1-configure-the-storageclass-to-support-volume-expansion]]
 === 步驟1：設定StorageClass以支援Volume擴充
 
 編輯 StorageClass 定義以將欄位設定 `allowVolumeExpansion`為 `true`。
@@ -46,6 +48,7 @@ allowVolumeExpansion: True
 
 
 
+[[step-2-create-a-pvc-with-the-storageclass-you-created]]
 === 步驟2：使用您建立的StorageClass建立一個永久虛擬儲存設備
 
 編輯 PVC 定義並更新、 `spec.resources.requests.storage`以反映新的所需尺寸、該尺寸必須大於原始尺寸。
@@ -79,6 +82,7 @@ pvc-8a814d62-bd58-4253-b0d1-82f2885db671   1Gi        RWO            Delete     
 ----
 
 
+[[step-3-define-a-pod-that-attaches-the-pvc]]
 === 步驟3：定義一個連接至PVc的Pod
 
 將 PV 附加至 Pod 、以便調整大小。調整iSCSI PV的大小有兩種情況：
@@ -113,6 +117,7 @@ Mounted By:    ubuntu-pod
 ----
 
 
+[[step-4-expand-the-pv]]
 === 步驟 4 ：展開 PV
 
 若要調整從 1Gi 建立到 2Gi 的 PV 大小、請編輯 PVC 定義並將更新 `spec.resources.requests.storage`為 2Gi 。
@@ -149,6 +154,7 @@ spec:
 ----
 
 
+[[step-5-validate-the-expansion]]
 === 步驟 5 ：驗證擴充
 
 您可以檢查 PVC 、 PV 和 Trident Volume 的大小、以驗證擴充是否正常運作：
@@ -170,12 +176,14 @@ tridentctl get volumes -n trident
 ----
 
 
+[[expand-an-nfs-volume]]
 == 展開NFS Volume
 
 Trident 支援 NFS PV 的 Volume 擴充、部署於 `ontap-nas`、 `ontap-nas-economy`、 `ontap-nas-flexgroup` `gcp-cvs`和 `azure-netapp-files`後端。
 
 
 
+[[step-1-configure-the-storageclass-to-support-volume-expansion]]
 === 步驟1：設定StorageClass以支援Volume擴充
 
 若要調整 NFS PV 的大小、管理員必須先將欄位設定為 `true`、以設定儲存類別以允許擴充磁碟區 `allowVolumeExpansion`：
@@ -196,6 +204,7 @@ allowVolumeExpansion: true
 
 
 
+[[step-2-create-a-pvc-with-the-storageclass-you-created]]
 === 步驟2：使用您建立的StorageClass建立一個永久虛擬儲存設備
 
 [listing]
@@ -227,6 +236,7 @@ pvc-08f3d561-b199-11e9-8d9f-5254004dfdb7   20Mi       RWO            Delete     
 ----
 
 
+[[step-3-expand-the-pv]]
 === 步驟 3 ：展開 PV
 
 若要將新建立的 20MiB PV 調整為 1GiB 、請編輯 PVC 並設定 `spec.resources.requests.storage`為 1GiB ：
@@ -263,6 +273,7 @@ spec:
 ----
 
 
+[[step-4-validate-the-expansion]]
 === 步驟 4 ：驗證擴充
 
 您可以檢查 PVC 、 PV 和 Trident Volume 的大小、以驗證調整大小是否正常運作：

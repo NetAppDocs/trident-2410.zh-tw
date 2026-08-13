@@ -16,6 +16,7 @@ summary: 您可以部署 Trident 運算子、並使用 Helm 安裝 Trident 。�
 
 
 
+[[critical-information-about-trident-24-10]]
 == Trident 24.10 的重要資訊
 
 * 您必須閱讀下列有關 Trident 的重要資訊。 *
@@ -36,6 +37,7 @@ summary: 您可以部署 Trident 運算子、並使用 Helm 安裝 Trident 。�
 ====
 
 
+[[deploy-the-trident-operator-and-install-trident-using-helm]]
 == 部署 Trident 操作員、並使用 Helm 安裝 Trident
 
 使用 Trident link:https://artifacthub.io/packages/helm/netapp-trident/trident-operator["掌舵表"^]、您可以部署 Trident 操作員、並在一個步驟中安裝 Trident 。
@@ -43,7 +45,7 @@ summary: 您可以部署 Trident 運算子、並使用 Helm 安裝 Trident 。�
 檢查 link:../trident-install/kubernetes-deploy.html["安裝總覽"] 以確保滿足安裝先決條件並為您的環境選擇了正確的安裝選項。
 
 .開始之前
-除了 link:../trident-install/kubernetes-deploy.html#before-you-deploy["部署先決條件"] 之外，您還需要 link:https://v3.helm.sh/["Helm版本3"^]。
+除了 link:kubernetes-deploy.html#before-you-deploy["部署先決條件"] 之外，您還需要 link:https://v3.helm.sh/["Helm版本3"^]。
 
 
 IMPORTANT: 在私有儲存庫中安裝 Trident 時、如果您使用 `imageRegistry`交換器來指定儲存庫位置、請勿在儲存庫路徑中使用 `/netapp/`。
@@ -84,6 +86,7 @@ NOTE: 如果您已經為 Trident 建立命名空間、此 `--create-namespace`�
 
 
 
+[[pass-configuration-data-during-install]]
 == 在安裝期間傳遞組態資料
 
 安裝期間有兩種傳遞組態資料的方法：
@@ -116,6 +119,7 @@ helm install <name> netapp-trident/trident-operator --version 100.2406.0  --crea
 ----
 
 
+[[configuration-options]]
 == 組態選項
 
 此表格和 `values.yaml`檔案是 Helm 圖表的一部分、提供按鍵清單及其預設值。

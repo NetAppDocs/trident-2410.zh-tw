@@ -16,6 +16,7 @@ Trident 運算子可讓您使用規格中的屬性來自訂 Trident 安裝 `Trid
 
 
 
+[[understanding-controller-pods-and-node-pods]]
 == 瞭解控制器 Pod 和節點 Pod
 
 Trident 以單一控制器 Pod 的形式執行、並在叢集中的每個工作節點上執行節點 Pod 。節點 Pod 必須在任何想要掛載 Trident Volume 的主機上執行。
@@ -28,6 +29,7 @@ Kubernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/assign-p
 
 
 
+[[configuration-options]]
 == 組態選項
 
 
@@ -120,6 +122,7 @@ NOTE: 如需格式化 Pod 參數的詳細資訊link:https://kubernetes.io/docs/c
 
 
 
+[[details-about-force-detach]]
 === 強制分離的詳細資料
 
 強制分離適用於 `ontap-san`， `ontap-san-economy`和 `ontap-nas-economy`僅有的。在啟用強制分離之前，必須在 Kubernetes 叢集上啟用非正常節點關閉 (NGNS)。有關詳細信息，請參閱link:https://kubernetes.io/docs/concepts/architecture/nodes/#non-graceful-node-shutdown["Kubernetes ：非正常節點關機"^] 。
@@ -148,6 +151,7 @@ NOTE: Trident 控制器將拒絕新的發佈 Volume 要求、直到 Trident 節�
 
 
 
+[[sample-configurations]]
 == 組態範例
 
 您可以在定義時 `TridentOrchestrator`使用中的屬性<<組態選項>>來自訂安裝。

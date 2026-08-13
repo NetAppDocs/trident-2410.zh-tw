@@ -16,6 +16,7 @@ summary: '您可以使用 `tridentctl import`或 PVC 註解將現有儲存磁碟
 
 
 
+[[overview-and-considerations]]
 == 總覽與考量
 
 您可以將磁碟區匯入 Trident 、以便：
@@ -52,6 +53,7 @@ TIP: 如果您想要將Kubernetes用於容器化工作負載、但想要管理Ku
 
 
 
+[[import-a-volume]]
 == 匯入 Volume
 
 您可以使用  `tridentctl import` 或透過建立具有 Trident 匯入註解的 PVC 來匯入磁碟區。
@@ -147,12 +149,14 @@ Trident 會自動匯入磁碟區並將其繫結至 PVC。
 ====
 
 
+[[examples]]
 == 範例
 
 請參閱下列 Volume 匯入範例、瞭解支援的驅動程式。
 
 
 
+[[ontap-nas-and-ontap-nas-flexgroup]]
 === ONTAP NAS 和 ONTAP NAS FlexGroup
 
 Trident 支援使用和 `ontap-nas-flexgroup`驅動程式進行 Volume 匯入 `ontap-nas`。
@@ -260,6 +264,7 @@ spec:
 ====
 
 
+[[ontap-san]]
 === SAN ONTAP
 
 Trident 支援使用和 `ontap-san-economy`驅動程式進行 Volume 匯入 `ontap-san`。
@@ -311,6 +316,7 @@ image:./san-import-igroup.png["對應至 iqn 和叢集 iqn 的 LUN 影像。"]
 ====
 
 
+[[element]]
 === 元素
 
 Trident 支援使用驅動程式的 NetApp Element 軟體和 NetApp HCI Volume 匯入 `solidfire-san`。
@@ -332,6 +338,7 @@ tridentctl import volume element_default element-managed -f pvc-basic-import.yam
 ----
 
 
+[[google-cloud-platform]]
 === Google Cloud Platform
 
 Trident 支援使用驅動程式進行 Volume 匯入 `gcp-cvs`。
@@ -354,6 +361,7 @@ tridentctl import volume gcpcvs_YEppr adroit-jolly-swift -f <path-to-pvc-file> -
 ----
 
 
+[[azure-netapp-files]]
 === Azure NetApp Files
 
 Trident 支援使用驅動程式進行 Volume 匯入 `azure-netapp-files`。

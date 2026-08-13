@@ -16,6 +16,7 @@ summary: 建立 PersistentVolume （ PV ）和 PersistentVolume Claim （ PVC �
 
 
 
+[[overview]]
 == 總覽
 
 link:https://kubernetes.io/docs/concepts/storage/persistent-volumes/["_PersistentVolumer_"^]（ PV ）是叢集管理員在 Kubernetes 叢集上配置的實體儲存資源。 https://kubernetes.io/docs/concepts/storage/persistent-volumes["_PersistentVolume Claim"^]（ PVC ）是存取叢集上 PersistentVolume 的要求。
@@ -26,6 +27,7 @@ link:https://kubernetes.io/docs/concepts/storage/persistent-volumes/["_Persisten
 
 
 
+[[sample-manifests]]
 === 範例資訊清單
 
 .PersistentVolume 範例資訊清單
@@ -148,6 +150,7 @@ spec:
 ====
 
 
+[[create-the-pv-and-pvc]]
 == 建立 PV 和 PVC
 
 .步驟

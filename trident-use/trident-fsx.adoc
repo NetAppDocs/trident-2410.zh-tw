@@ -22,6 +22,7 @@ https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon
 
 
 
+[[requirements]]
 == 需求
 
 除了link:../trident-get-started/requirements.html["Trident 需求"]、若要將適用於 ONTAP 的 FSX 與 Trident 整合、您還需要：
@@ -37,6 +38,7 @@ NOTE: 根據您的 EKS AMI 類型、確保您遵循 Amazon Linux 和 Ubuntu （ 
 
 
 
+[[considerations]]
 == 考量
 
 * SMB Volume：
@@ -55,6 +57,7 @@ NOTE: 如果您要將 IAM 角色指定給 Trident 、則可以省略將、 `apiK
 
 
 
+[[authentication]]
 == 驗證
 
 Trident 提供兩種驗證模式。
@@ -75,6 +78,7 @@ WARNING: Trident 應以 SVM 使用者或具有相同角色之不同名稱的使�
 
 
 
+[[tested-amazon-machine-images-amis]]
 == 已測試的 Amazon Machine 映像（ Amis ）
 
 EKS 叢集支援各種作業系統，但 AWS 已針對容器和 EKS 最佳化某些 Amazon Machine 映像（ Amis ）。下列 Amis 已通過 Trident 24.10 測試。
@@ -125,6 +129,7 @@ NOTE: 如果此處未列出您想要的 AMI ，並不表示不支援，只是表
 
 
 
+[[find-more-information]]
 == 如需詳細資訊、請參閱
 
 * https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["Amazon FSX for NetApp ONTAP 的支援文件"^]

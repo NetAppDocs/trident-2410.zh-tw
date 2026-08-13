@@ -18,12 +18,14 @@ Trident Protect 的儲存桶自訂資源 (CR) 稱為 AppVault。AppVault 物件�
 
 
 
+[[key-generation-and-appvault-definition-examples]]
 == 金鑰產生與 AppVault 定義範例
 
 定義 AppVault CR 時，您需要加入認證，才能存取供應商託管的資源。您產生認證金鑰的方式會因供應商而異。以下是數個提供者的命令列金鑰產生範例，接著是每個提供者的 AppVault 定義範例。
 
 
 
+[[key-generation-examples]]
 === 關鍵創造範例
 
 您可以使用下列範例來建立每個雲端供應商認證的金鑰。
@@ -75,6 +77,7 @@ kubectl create secret generic  <secret-name> --from-literal=accessKeyID=<objects
 ====
 
 
+[[appvault-cr-examples]]
 === AppVault CR 範例
 
 您可以使用下列 CR 範例，為每個雲端供應商建立 AppVault 物件。
@@ -232,6 +235,7 @@ spec:
 ====
 
 
+[[appvault-creation-examples-using-the-trident-protect-cli]]
 === 使用Trident Protect CLI 建立 AppVault 的範例
 
 您可以使用下列 CLI 命令範例，為每個供應商建立 AppVault CRS 。
@@ -283,6 +287,7 @@ tridentctl-protect create vault StorageGridS3 s3vault --bucket <bucket-name> --s
 ====
 
 
+[[use-the-appvault-browser-to-view-appvault-information]]
 == 使用 AppVault 瀏覽器檢視 AppVault 資訊
 
 您可以使用Trident Protect CLI 外掛程式查看有關叢集上建立的 AppVault 物件的資訊。
@@ -322,6 +327,7 @@ tridentctl-protect get appvaultcontent gcp-vault --show-resources all
 
 
 
+[[remove-an-appvault]]
 == 移除 AppVault
 
 您可以隨時移除 AppVault 物件。

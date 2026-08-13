@@ -16,10 +16,12 @@ summary: 使用 Trident 搭配 Amazon FSX for NetApp ONTAP 、您可以確保在
 
 
 
+[[create-a-storage-class]]
 == 建立儲存類別
 
 
 
+[[configure-a-kubernetes-storageclass-object]]
 === 設定 Kubernetes StorageClass 物件
 
 將 https://kubernetes.io/docs/concepts/storage/storage-classes/["Kubernetes StorageClass 物件"^] Trident 識別為用於該類別的資源配置程式、會指示 Trident 如何資源配置 Volume 。例如：
@@ -41,6 +43,7 @@ parameters:
 
 
 
+[[create-a-storage-class]]
 === 建立儲存類別
 
 .步驟
@@ -63,6 +66,7 @@ basic-csi    csi.trident.netapp.io   15h
 
 
 
+[[create-the-pv-and-pvc]]
 == 建立 PV 和 PVC
 
 link:https://kubernetes.io/docs/concepts/storage/persistent-volumes/["_PersistentVolumer_"^]（ PV ）是叢集管理員在 Kubernetes 叢集上配置的實體儲存資源。 https://kubernetes.io/docs/concepts/storage/persistent-volumes["_PersistentVolume Claim"^]（ PVC ）是存取叢集上 PersistentVolume 的要求。
@@ -73,6 +77,7 @@ link:https://kubernetes.io/docs/concepts/storage/persistent-volumes/["_Persisten
 
 
 
+[[sample-manifests]]
 === 範例資訊清單
 
 .PersistentVolume 範例資訊清單
@@ -141,6 +146,7 @@ storageClassName: protection-gold
 ====
 
 
+[[create-the-pv-and-pvc]]
 === 建立 PV 和 PVC
 
 .步驟
@@ -178,6 +184,7 @@ pvc-storage Bound  pv-name 2Gi      RWO                       5m
 
 
 
+[[trident-attributes]]
 == Trident 屬性
 
 這些參數決定應使用哪些Trident託管儲存資源池來配置特定類型的磁碟區。

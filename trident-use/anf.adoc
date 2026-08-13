@@ -16,6 +16,7 @@ summary: 您可以將 Azure NetApp Files 設定為 Trident 的後端。您可以
 
 
 
+[[azure-netapp-files-driver-details]]
 == Azure NetApp Files 驅動程式詳細資料
 
 Trident 提供下列 Azure NetApp Files 儲存驅動程式、可與叢集進行通訊。支援的存取模式包括： _ReadWriteOnce_ （ rwo ）、 _ReadOnlyMany （ ROX ）、 _ReadWriteMany （ rwx ）、 _ReadWriteOncePod （ RWOP_ ）。
@@ -37,6 +38,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 |===
 
 
+[[considerations]]
 === 考量
 
 * Azure NetApp Files 服務不支援小於 50 GiB 的磁碟區。如果要求較小的磁碟區、 Trident 會自動建立 50-GiB 磁碟區。
@@ -45,6 +47,7 @@ Rwo 、 ROX 、 rwx 、 RWOP
 
 
 
+[[managed-identities-for-aks]]
 == 管理的身分識別
 
 Trident 支援 link:https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["託管身分識別"^]Azure Kubernetes 服務叢集。若要善用託管身分識別所提供的簡化認證管理功能、您必須具備：
@@ -95,6 +98,7 @@ tridentctl install --cloud-provider="Azure" -n trident
 
 
 
+[[cloud-identity-for-aks]]
 == 雲端身分識別
 
 雲端身分識別可讓 Kubernetes Pod 以工作負載身分驗證來存取 Azure 資源、而非提供明確的 Azure 認證。
