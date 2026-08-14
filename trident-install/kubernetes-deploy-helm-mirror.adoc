@@ -45,7 +45,7 @@ summary: 您可以部署 Trident 運算子、並使用 Helm 安裝 Trident 。�
 檢查 link:../trident-install/kubernetes-deploy.html["安裝總覽"] 以確保滿足安裝先決條件並為您的環境選擇了正確的安裝選項。
 
 .開始之前
-除了 link:kubernetes-deploy.html#before-you-deploy["部署先決條件"] 之外，您還需要 link:https://v3.helm.sh/["Helm版本3"^]。
+除了 link:kubernetes-deploy.html#before-you-begin["部署先決條件"] 之外，您還需要 link:https://v3.helm.sh/["Helm版本3"^]。
 
 
 IMPORTANT: 在私有儲存庫中安裝 Trident 時、如果您使用 `imageRegistry`交換器來指定儲存庫位置、請勿在儲存庫路徑中使用 `/netapp/`。
